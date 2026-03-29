@@ -1,50 +1,54 @@
 # Carbon Footprint Calculator
 
-A Java application that calculates your monthly carbon emissions based on your lifestyle activities.
+A Java GUI application that helps users calculate their monthly carbon emissions based on lifestyle choices and provides personalized recommendations for reducing environmental impact.
 
-## What It Does
-- Select your lifestyle category (Student, Professional, Traveler, etc.)
-- Input your daily activities (car travel, electricity use, meat meals, flights)
-- Get your monthly CO2 emissions calculated
-- Receive personalized suggestions to reduce your carbon footprint
+## 🌍 What It Does
 
-## Features
-- Pre-set values based on 12 lifestyle categories
-- Ability to customize your own values
-- Real-time carbon emission calculation
-- Eco-friendly feedback and recommendations
+The Carbon Footprint Calculator analyzes your daily activities and estimates how much CO2 you generate monthly. Based on your lifestyle category, it provides:
 
-## Technologies Used
-- Java (Console Application)
-- MySQL Database (with Connector)
-- VS Code with Copilot assistance
+- **Personalized Calculations** - Based on 12 lifestyle categories (Student, Professional, Business Traveler, etc.)
+- **CO2 Breakdown** - See emissions from car travel, electricity, food, and flights
+- **Smart Suggestions** - Get actionable recommendations tailored to your current carbon footprint
+- **Data Storage** - Results saved in MySQL for tracking progress over time
 
-## How to Run
-1. Open the project in VS Code
-2. Make sure MySQL is running (via XAMPP or MySQL app)
-3. Run the `Eco.java` file from terminal:
-```bash
-   javac Eco.java
-   java Eco
-```
-4. Follow the prompts to select your lifestyle and enter your data
-5. View your carbon footprint results and recommendations
+## ✨ Key Features
 
-## What You'll See
-- A menu to choose your lifestyle category
-- Suggested values based on your category
-- Option to customize the values
-- Your monthly CO2 emissions breakdown
-- Personalized feedback to help reduce emissions
+- **12 Lifestyle Categories** - Student, Homemaker, Professional, Business Traveler, Remote Worker, Industrial Worker, Government Official, Retired, Medical Professional, Tech Employee, Airline Staff, Environmental Activist
+- **Customizable Inputs** - Start with suggested values or enter your own
+- **Real-time Calculations** - Instant CO2 emission results
+- **Eco-Friendly Feedback** - Get encouragement and specific actions to reduce your footprint
+- **Database Integration** - MySQL stores your calculation history
 
-## Example Output
-```
-Car Travel:         156.24 kg
-Electricity Use:    42.60 kg
-Meat-based Meals:   86.45 kg
-Flights:            20.83 kg
-Total Carbon Footprint: 306.12 kg CO2
-```
+## 🛠️ Technologies Used
 
-## Author
-Simna Rachel
+- **Language**: Java
+- **GUI**: Java Swing (Desktop Application)
+- **Database**: MySQL
+- **Tools**: VS Code with Copilot assistance, XAMPP for local MySQL
+- **Connector**: MySQL Connector/J 9.5.0
+
+## 🚀 How to Run
+
+### Prerequisites
+- Java 8 or higher
+- MySQL (via XAMPP or standalone)
+- MySQL Connector JAR (included in project)
+
+### Steps
+
+1. **Start MySQL**
+   - If using XAMPP: Open XAMPP Control Panel and click "Start" next to MySQL
+   - Ensure your MySQL connection is active
+
+2. **Run the Application**
+   - Open project in VS Code or your Java IDE
+   - Compile: `javac *.java`
+   - Run: `java Eco` (or `java CarbonCalculatorApp` depending on entry point)
+
+3. **Use the Application**
+   - Select your lifestyle category (1-12)
+   - Review suggested values or customize them
+   - View your monthly carbon footprint
+   - Read personalized recommendations
+
+## 📊 Example Output
